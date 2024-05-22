@@ -1,5 +1,3 @@
-Sure, here's a more professional and detailed `README.md` file for your Statamic addon:
-
 ````markdown
 # Dummy Data Addon for Statamic
 
