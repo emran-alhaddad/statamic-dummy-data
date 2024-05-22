@@ -302,7 +302,7 @@ class InjectDummyData extends Command
 
 ## Contributions
 
-Contributions are welcome. Please create pull requests or issues on our [GitHub repository](https://github.com/emran-alhaddad-alhaddad/statamic-statamic-dummy-data).
+Contributions are welcome. Please create pull requests or issues on our [GitHub repository](https://github.com/emran-alhaddad-alhaddad/statamic-dummy-data).
 
 ## License
 
