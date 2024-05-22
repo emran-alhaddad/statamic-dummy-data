@@ -1,6 +1,6 @@
 Sure, here's a more professional and detailed `README.md` file for your Statamic addon:
 
-```markdown
+````markdown
 # Dummy Data Addon for Statamic
 
 The Dummy Data addon for Statamic allows you to quickly inject dummy data into your collections and taxonomies. This is useful for testing and development purposes, enabling you to populate your site with sample content effortlessly.
@@ -16,8 +16,9 @@ The Dummy Data addon for Statamic allows you to quickly inject dummy data into y
 To install the Dummy Data addon, use Composer:
 
 ```bash
-composer require emran/dummy-data
+composer require emran-alhaddad/statamic-dummy-data
 ```
+````
 
 ## Configuration
 
@@ -28,16 +29,16 @@ No additional configuration is required. Once installed, the command is ready to
 To inject dummy data into your collections or taxonomies, use the following Artisan command:
 
 ```bash
-php artisan dummy-data:inject
+php artisan statamic-dummy-data:inject
 ```
 
 ### Injecting Data into a Collection
 
 1. Run the command:
 
-    ```bash
-    php artisan dummy-data:inject
-    ```
+   ```bash
+   php artisan statamic-dummy-data:inject
+   ```
 
 2. Choose `Collection` when prompted.
 3. Select the collection you want to inject data into.
@@ -47,9 +48,9 @@ php artisan dummy-data:inject
 
 1. Run the command:
 
-    ```bash
-    php artisan dummy-data:inject
-    ```
+   ```bash
+   php artisan statamic-dummy-data:inject
+   ```
 
 2. Choose `Taxonomy` when prompted.
 3. Select the taxonomy you want to inject data into.
@@ -114,7 +115,7 @@ use Statamic\Facades\Term;
 
 class InjectDummyData extends Command
 {
-    protected $signature = 'dummy-data:inject';
+    protected $signature = 'statamic-dummy-data:inject';
     protected $description = 'Interactively injects dummy data into collections or taxonomies';
 
     public function handle()
@@ -247,7 +248,7 @@ class InjectDummyData extends Command
     {
         $type = $field['type'] ?? $field['field']['type'];
         $handle = $field['handle'];
-        
+
         switch ($type) {
             case 'text':
             case 'textarea':
@@ -303,9 +304,12 @@ class InjectDummyData extends Command
 
 ## Contributions
 
-Contributions are welcome. Please create pull requests or issues on our [GitHub repository](https://github.com/emran-alhaddad/statamic-dummy-data).
+Contributions are welcome. Please create pull requests or issues on our [GitHub repository](https://github.com/emran-alhaddad-alhaddad/statamic-statamic-dummy-data).
 
 ## License
 
 This addon is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+```
+
 ```

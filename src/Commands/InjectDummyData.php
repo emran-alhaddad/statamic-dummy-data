@@ -11,7 +11,7 @@ use Statamic\Facades\Term;
 
 class InjectDummyData extends Command
 {
-    protected $signature = 'dummy-data:inject';
+    protected $signature = 'statamic-dummy-data:inject';
     protected $description = 'Interactively injects dummy data into collections or taxonomies';
 
     public function handle()
