@@ -1,21 +1,18 @@
 <?php
 
-namespace Emran\DummyData;
+namespace Emran\DummyDataInject;
 
-use Illuminate\Support\ServiceProvider as s;
-use Emran\DummyData\Commands\InjectDummyData;
+use Statamic\Providers\AddonServiceProvider;
 
-class ServiceProvider extends s
+
+class ServiceProvider extends AddonServiceProvider
 {
-    public function register()
+
+
+    public function bootAddon()
     {
         $this->commands([
             InjectDummyData::class,
         ]);
-    }
-
-    public function boot()
-    {
-        // Your boot logic here
     }
 }

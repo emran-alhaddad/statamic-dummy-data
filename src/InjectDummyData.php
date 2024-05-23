@@ -1,6 +1,6 @@
 <?php
 
-namespace Emran\DummyData\Commands;
+namespace Emran\DummyDataInject;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -8,9 +8,12 @@ use Statamic\Facades\Collection;
 use Statamic\Facades\Entry;
 use Statamic\Facades\Taxonomy;
 use Statamic\Facades\Term;
+use Statamic\Console\RunsInPlease;
+
 
 class InjectDummyData extends Command
 {
+    use RunsInPlease;
     protected $signature = 'statamic-dummy-data:inject';
     protected $description = 'Interactively injects dummy data into collections or taxonomies';
 

@@ -2,10 +2,10 @@
   "name": "Dummy Data",
   "slug": "statamic-dummy-data",
   "description": "A Statamic addon to inject dummy data into collections and taxonomies",
-  "namespace": "Emran\\DummyData\\",
+  "namespace": "Emran\\DummyDataInject\\",
   "autoload": {
     "psr-4": {
-      "Emran\\DummyData\\": "src/"
+      "Emran\\DummyDataInject\\": "src/"
     }
   }
 }
