@@ -1,6 +1,6 @@
 <?php
 
-namespace Emran\DummyDataInject;
+namespace EmranAlhaddad\SatamicDummyData;
 
 use Statamic\Providers\AddonServiceProvider;
 

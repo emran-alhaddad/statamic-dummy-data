@@ -1,6 +1,6 @@
 <?php
 
-namespace Emran\DummyDataInject;
+namespace EmranAlhaddad\SatamicDummyData;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
