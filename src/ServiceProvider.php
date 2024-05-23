@@ -1,18 +1,27 @@
+
 <?php
 
-namespace EmranAlhaddad\SatamicDummyData;
+namespace Emran\DummyDataInject;
 
 use Statamic\Providers\AddonServiceProvider;
 
-
-class ServiceProvider extends AddonServiceProvider
+class ServiceProvider extends ServiceProvider
 {
-
-
-    public function bootAddon()
+    public function register()
     {
-        $this->commands([
-            InjectDummyData::class,
-        ]);
+        // Register any application services.
+        // Example: $this->app->singleton(SomeService::class, function ($app) {
+        //     return new SomeService();
+        // });
+    }
+
+    public function boot()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                InjectDummyData::class,
+            ]);
+        }
     }
 }
+
