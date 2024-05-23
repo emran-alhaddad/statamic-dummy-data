@@ -27,7 +27,7 @@ No additional configuration is required. Once installed, the command is ready to
 To inject dummy data into your collections or taxonomies, use the following Artisan command:
 
 ```bash
-php artisan statamic-dummy-data:inject
+php artisan statamic:dummy-data:inject
 ```
 
 ### Injecting Data into a Collection
@@ -35,7 +35,7 @@ php artisan statamic-dummy-data:inject
 1. Run the command:
 
    ```bash
-   php artisan statamic-dummy-data:inject
+   php artisan statamic:dummy-data:inject
    ```
 
 2. Choose `Collection` when prompted.
@@ -47,7 +47,7 @@ php artisan statamic-dummy-data:inject
 1. Run the command:
 
    ```bash
-   php artisan statamic-dummy-data:inject
+   php artisan statamic:dummy-data:inject
    ```
 
 2. Choose `Taxonomy` when prompted.
@@ -113,7 +113,7 @@ use Statamic\Facades\Term;
 
 class InjectDummyData extends Command
 {
-    protected $signature = 'statamic-dummy-data:inject';
+    protected $signature = 'statamic:dummy-data:inject';
     protected $description = 'Interactively injects dummy data into collections or taxonomies';
 
     public function handle()

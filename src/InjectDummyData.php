@@ -14,7 +14,7 @@ use Statamic\Console\RunsInPlease;
 class InjectDummyData extends Command
 {
     use RunsInPlease;
-    protected $signature = 'statamic-dummy-data:inject';
+    protected $signature = 'statamic:dummy-data:inject';
     protected $description = 'Interactively injects dummy data into collections or taxonomies';
 
     public function handle()
@@ -147,7 +147,7 @@ class InjectDummyData extends Command
     {
         $type = $field['type'] ?? $field['field']['type'];
         $handle = $field['handle'];
-        
+
         switch ($type) {
             case 'text':
             case 'textarea':
