@@ -3,18 +3,18 @@
   "description": "A Statamic addon to inject dummy data into collections and taxonomies",
   "type": "statamic-addon",
   "require": {
-    "statamic/cms": "^3.0"
+      "statamic/cms": "^5.0"
   },
   "autoload": {
-    "psr-4": {
-      "Emran\\DummyData\\": "src/"
-    }
+      "psr-4": {
+          "Emran\\DummyData\\": "src/"
+      }
   },
   "extra": {
-    "statamic": {
-      "name": "Dummy Data",
-      "description": "A Statamic addon to inject dummy data into collections and taxonomies"
-    }
+      "statamic": {
+          "name": "Dummy Data",
+          "description": "A Statamic addon to inject dummy data into collections and taxonomies"
+      }
   },
   "license": "MIT"
 }
