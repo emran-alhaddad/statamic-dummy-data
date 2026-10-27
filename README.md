@@ -1,4 +1,3 @@
-````markdown
 # Dummy Data Addon for Statamic
 
 The Dummy Data addon for Statamic allows you to quickly inject dummy data into your collections and taxonomies. This is useful for testing and development purposes, enabling you to populate your site with sample content effortlessly.
@@ -16,7 +15,6 @@ To install the Dummy Data addon, use Composer:
 ```bash
 composer require emran-alhaddad/statamic-dummy-data
 ```
-````
 
 ## Configuration
 
@@ -302,12 +300,8 @@ class InjectDummyData extends Command
 
 ## Contributions
 
-Contributions are welcome. Please create pull requests or issues on our [GitHub repository](https://github.com/emran-alhaddad-alhaddad/statamic-dummy-data).
+Contributions are welcome. Please create pull requests or issues on our [GitHub repository](https://github.com/emran-alhaddad/statamic-dummy-data).
 
 ## License
 
 This addon is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-```
-
-```
